@@ -1,0 +1,242 @@
+/* Default style start */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --link:#555;
+    --text:#555;
+    --heading:#40403E;
+    --btn:#F37564;
+    --hoverBtn:#F2C8CF;
+    --gradient:#fff,#ffd6d6;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+h1{
+    font-size: 50px;
+    color: var(--heading);
+}
+p{
+    color: var(--text);
+}
+.margin{
+    margin: 40px 0;
+}
+.btn{
+    margin-top: 15px;
+    padding: 10px 50px;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--btn);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color: var(--hoverBtn);
+    color: var(--text);
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Default style end */
+/* header start */
+.header{
+    background-image: url("/images/banner.webp");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navber{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+nav {
+    display: inline;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style-type: none;
+    margin-right: 20px;
+    font-size: 15px;
+    line-height: 35px;
+}
+a{
+    text-decoration: none;
+    color: var(--link);
+}
+.banner-section{
+    height: 85vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.banner-text p{
+    width: 380px;
+    text-align: justify;
+}
+/* header end */
+/* catagories start */
+.catagories{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 20px;
+}
+.catagories img{
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
+    opacity: 0.9;
+    opacity: 0.9;
+}
+.catagories img:hover{
+    transform: translateY(10px);
+    opacity: 1;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.4);
+}
+/* catagories end */
+/* products start */
+.products{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+}
+.pro-title{
+    color: var(--heading);
+    font-size: 25px;
+    text-align: center;
+    margin: 30px 0;
+    position: relative;
+    padding-bottom:4px ;
+}
+.pro-title::after{
+    content: "";
+    background-color: var(--btn);
+    width: 80px;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+}
+.product{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    padding: 5px;
+    transition: 0.5s;
+}
+.product:hover{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+.product img{
+    border-radius: 5px;
+}
+.product h3{
+    color: var(--text);
+    margin: 5px;
+}
+.product-details{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+.product-details p{
+    font-weight: 900;
+    font-size: 14px;
+}
+.rating-icon{
+    color: var(--btn);
+}
+/* products end */
+/* offer start */
+.offer-container{
+    background: radial-gradient(var(--gradient));
+}
+.offer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+/* offer end */
+/* testimonials start */
+
+.testimonials{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+.testimonial{
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    padding: 25px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.testimonial p{
+    margin-bottom: 10px;
+}
+.testimonial img{
+    border-radius: 50%;
+    width: 30%;
+    
+}
+.fa-quote-left{
+    font-size: 65px;
+    color: var(--btn);
+    text-align: start;
+}
+
+/* testimonials end */
+/* footer start */
+
+.footer-section{
+    background-color: #010001;
+    color: #fff;
+    padding: 40px 0;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.footer img {
+    margin-bottom: 5px;
+}
+.f-btn{
+    background-color: #fff;
+    color: #010001;
+}
+.f-btn:hover{
+    background-color: var(--btn);
+    color: #fff;
+}
+.follow{
+    text-align: center;
+    margin-top: 25px;
+
+}
+.follow ul li{
+    list-style-type: none;
+    margin-top: 5px;
+}
+.follow ul li a:hover{
+    color: #fff;
+}
+/* footer end */
